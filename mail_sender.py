@@ -46,7 +46,7 @@ def check_counter(file_path):
 # Sürekli kontrol döngüsü
 def monitor_counter(file_path, to_email):
     while True:
-        counter = check_counter(file_path)
+        counter = check_counter(gifile_path)
         if counter is not None:
             for threshold in thresholds:
                 if counter >= threshold and not flags[threshold]:
